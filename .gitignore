@@ -1,0 +1,85 @@
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# Distribución / empaquetado
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ── Outputs generados ─────────────────────────────────────
+# Las figuras y tablas se generan corriendo main.py
+# No las subimos al repo para evitar conflictos de binarios
+outputs/*.png
+outputs/*.jpg
+outputs/*.svg
+outputs/*.csv
+outputs/*.pdf
+
+# Conservar la carpeta outputs/ en el repo
+!outputs/.gitkeep
+
+# ── Jupyter Notebooks (si alguien los usa) ────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── IDEs y editores ───────────────────────────────────────
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Spyder
+.spyderproject.cfg
+.spyproject/
+
+# ── Sistema operativo ─────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ── Archivos temporales y de log ──────────────────────────
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ── Datos sensibles ───────────────────────────────────────
+.env
+*.key
+secrets.py
